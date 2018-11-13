@@ -12,7 +12,7 @@ use uuid;
 
 #[derive(Debug, AsExpression, PartialEq, FromSqlRow, Serialize, Deserialize)]
 #[sql_type = "UuidDiesel"]
-pub struct Uuid(uuid::Uuid);
+pub struct Uuid(pub uuid::Uuid);
 
 impl ToSql<Uuid, Pg> for Uuid {
     fn to_sql<W: Write>(&self, out: &mut Output<W, Pg>) -> serialize::Result {
