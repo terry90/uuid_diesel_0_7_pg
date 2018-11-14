@@ -1,6 +1,6 @@
 [package]
 name = "uuid_diesel_0_7_pg"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Terry Raimondo <terry.raimondo@gmail.com>"]
 edition = "2018"
 description = "Allows Uuid > v0.7.0 to be used with current diesel (1.3.3)"
